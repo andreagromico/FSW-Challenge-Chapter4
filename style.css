@@ -1,0 +1,301 @@
+/* Navigation Bar Section */
+nav {
+	z-index: 9999;
+}
+
+.bg-nav-project {
+	background-color: rgba(0,0,0,0.5);
+}
+
+.navbar {
+	padding: 20px 70px;
+}
+
+.navbar > div > a {
+	margin-right: 100px;
+}
+
+.navbar > div > a:hover {
+	margin-right: 100px;
+}
+
+.nav-link {
+	margin: 0 15px;
+	color: white !important;
+}
+
+/* Style */
+body {
+	color: white;
+	letter-spacing: 1.5px;
+}
+
+section {
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(247, 176, 58) !important;
+}
+
+.gray-color {
+	color: #777;
+}
+
+
+/* Fonts for the page */
+@font-face{
+	font-family: "BebasNeue-Bold";
+	src: url('./assets/font/BebasNeue-Bold.otf');
+}
+
+@font-face{
+	font-family: "OpenSans-Bold";
+	src: url('./assets/font/OpenSans-Bold.ttf');
+}
+
+@font-face{
+	font-family: "Opensans_Regular";
+	src: url('./assets/font/OpenSans-Regular.ttf');
+}
+
+
+/* Fonts Size */
+body {
+	font-family: "Open Sans Regular";
+	font-size: 18px;
+}
+
+.font-h1 {
+	font-family: "Open Sans Bold";
+	font-size: 72px;
+    color: white;
+}
+
+.font-h2 {
+	font-family: "Open Sans Bold";
+	font-size: 48px;
+    color: white;
+}
+
+.font-h3 {
+	font-family: "Open Sans Bold";
+	font-size: 24px;
+}
+
+.font-subtext {
+	font-family: "Open Sans Regular";
+	font-size: 14px;
+}
+
+.font-button {
+	font-family: "Open Sans Bold";
+	font-size: 16px;
+}
+
+.font-xs {
+	font-family: "Open Sans Regular";
+	font-size: 12px;
+}
+
+
+/* Page 1 - Main Screen Call to Action */
+.page1-main-screen {
+	background-image: 
+		radial-gradient(
+			189.96% 61.18% at 50% 38.82%, 
+			rgba(255, 181, 72, 0) 0%, 
+			rgba(52, 44, 29, 0.80319) 73.22%, 
+			#08090A 99.74%),
+		url('./assets/img/main-bg.jpg');
+	position: relative;
+	display: flex;
+}
+
+.orange-button {
+	background-color: rgb(247, 176, 58);
+	padding: 10px 60px;
+}
+
+.orange-button:hover {
+	background-color: rgba(247, 176, 58, 0.8);
+}
+
+.play-the-story {
+	margin-bottom: -5px;
+}
+
+
+/* Page 2 - Gameplay Options */
+.page2-the-games {
+	background-image: 
+		radial-gradient(
+			136.03% 54.57% at 50% 48.04%, 
+			rgba(255, 255, 255, 0) 0%, 
+			rgba(0, 0, 0, 0) 60.63%, 
+			#080A0B 99.74%),
+		url('./assets/img/the-games-bg.jpg');
+	position: relative;
+	display: flex;
+}
+
+.img-carousel {
+	width: 85%;
+}
+
+button.rounded-circle {
+	width: 15px !important;
+	height: 15px !important;
+	margin: 0 15px 0 15px !important;
+}
+
+
+/* Page 3 - Features */
+.page3-features {
+	background-image: 
+		radial-gradient(
+			51.1% 80.48% at 30.85% 53.65%,
+			rgba(255, 255, 255, 0) 0%,
+			rgba(0, 0, 0, 0) 19.2%,
+			rgba(4, 5, 6, 0.520671) 47.48%,
+			#080A0B 99.74%),
+		url('./assets/img/features.jpg');
+	position: relative;
+	display: flex;
+}
+
+.feature-description {
+	margin: 10px 0 0 20px;
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+ul.timeline:before {
+    content: ' ';
+    background: #777;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+
+ul.timeline > li {
+    padding-left: 20px;
+}
+
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #777;
+    left: 22.5px;
+    width: 15px;
+    height: 15px;
+    z-index: 400;
+}
+
+ul.timeline > li > a:hover {
+	color: white !important;
+}
+
+.orange-title {
+	color: rgb(247, 176, 58);
+}
+
+
+/* Page 4 - System Requirements */
+.page4-system-req {
+	background-image: 
+		radial-gradient(
+			33.26% 45% at 64.32% 47.1%, 
+			rgba(255, 255, 255, 0) 3.36%, 
+			rgba(0, 0, 0, 0) 19.22%, 
+			#080A0B 99.74%),
+		url('./assets/img/requirements.png');
+	position: relative;
+	display: flex;
+}
+
+table {
+	border: 0.5px solid rgba(204,204,204,0.3) !important;
+	margin: 50px 0 0 0;
+	color: white !important;
+}
+
+
+/* Page 5 - Top Score */
+.page5-top-scores {
+	background-image: 
+		radial-gradient(
+			70.52% 37.27% at 24.21% 47.47%, 
+			rgba(35, 15, 15, 0) 0%, 
+			rgba(0, 0, 0, 0) 51.1%, 
+			#080A0B 99.74%),
+		url('./assets/img/top-score.png');
+	position: relative;
+	display: flex;
+}
+
+.card {
+	background-color: rgb(29, 29, 29);
+	margin: 10px 0 10px 0;
+}
+
+.thumb-img {
+	box-shadow: 5px 3px 0 rgb(247, 176, 58);
+}
+
+.testimonial {
+	margin: 15px 0 0 0;
+}
+
+
+/* Page 6 - Newsletter Subscribe */
+.page6-subscribe {
+	background-image: url('./assets/img/subscribe.png');
+	position: relative;
+	display: flex;
+}
+
+.form-control {
+	background-color: #222  !important;
+	border-color: #222 !important;
+	padding: 10px;
+	color: rgb(247, 176, 58) !important;
+}
+
+
+/* Footer */
+.footer-icon {
+	margin: 0 0 0 40px;
+}
+
+.footer-space {
+	line-height: 70px;
+	border-bottom: 1px solid #777;
+}
+
+.footer-end {
+	padding: 0 100px 40px 100px;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 600px){
+	
+}

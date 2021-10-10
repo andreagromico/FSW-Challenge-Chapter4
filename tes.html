@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>latihan flexbox</title>
+</head>
+<style>
+    html,body{
+        margin: 0;
+        padding: 0;
+        background-color: #ddd;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.65;
+        padding: 10px;
+        }
+    .container-satu{
+        width: 800;
+        margin: 50px auto;
+        padding: 20px;
+        display: flex;
+
+        background-color: aqua;
+        }
+    .header{
+        flex: 3;
+        background-color: rgb(255, 0, 0);
+    }
+    .nav{
+        flex: 1;
+        background-color: blue;
+    }
+    .sidebar{
+        background-color: orange;
+        flex:1
+    }
+    .content{
+        background-color: cornflowerblue;
+        flex: 3;
+    }
+    .footer{
+        flex: 1;
+    background-color: darkgreen;}
+    .container-dua{
+        display: flex;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #ddd;
+    }
+</style>
+<body>
+    <!-- Nurdin Abdillah D ROOM 2 -->
+<div class="div container-satu">
+    <div class="header"><h1>Ini adalah header</h1></div>
+    <div class="nav"><h1>ini adalah navigasi</h1></div>
+    </div>
+<div class="div container-dua">
+    <div class="div sidebar"><h1>Ini adalah Sidebar</h1></div>
+    <div class="div content"><h1>Ini adalah content</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, odio!</p>
+</div>
+</div>
+<div class="div container-satu">
+    <div class="footer"><h1>ini adalah footer</h1></div>
+</div>
+ 
+</body>

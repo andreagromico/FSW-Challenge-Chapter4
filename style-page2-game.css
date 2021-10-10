@@ -1,0 +1,210 @@
+.container-fluid {
+    background-color: #9C835F;
+}
+
+.wrapper {
+    height: 30rem;
+    width: 100%;
+    padding: 10px;
+    background-color: #9C835F;
+    margin: 10px 0;
+}
+
+.wrapper1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-bottom: 5rem;
+}
+
+.logo {
+    height: 50px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.header {
+    color: #F9B23D;
+    ;
+}
+
+.wrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 800px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: fit-content;
+    width: fit-content;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 30px;
+    color: #e0d9d9;
+
+}
+
+.pilihan {
+    height: 6rem;
+    width: 6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    align-content: center;
+}
+
+.box-2 {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: fit-content;
+    background-color: #9C835F;
+    margin-bottom: 4rem;
+}
+
+.container-play {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 70%;
+    margin-right: 10%;
+}
+
+.versus {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.computer {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 10%;
+    margin-right: 50%;
+}
+
+.container-refresh {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.refresh {
+    
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+}
+
+.reload.button {
+    height: 4rem;
+    width: 4rem;
+    justify-content: center;
+}
+
+
+/*Gameplay*/
+
+.reference-reload{
+  border-radius: 0%;
+  max-width:2rem;
+  height: 2rem;
+  align-content: center;
+  background-color: transparent;
+}
+
+.result {
+  display: flex;
+  flex-direction: row;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 10%;
+  background-color: #9C835F;
+
+}
+
+.DRAW {
+  display: flex;
+  flex-direction: row;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 10%;
+  background-color: #9C835F;
+  background: url(./assets/img/Draw.png);
+
+}
+
+.PlayerWin {
+  display: flex;
+  flex-direction: row;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 10%;
+  background-color: #9C835F;
+  background: url(./assets/img/player-win.png);
+
+
+}
+
+.ComputerWin {
+  display: flex;
+  flex-direction: row;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 10%;
+  background-color: #f36609; 
+  background: url(./assets/img/computer-win.png);
+}
+
+
+/*Responsive*/
+@media screen and (max-width: 600px) {
+    .container-play {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .player {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .computer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box1 {
+        display: flex;
+        flex-direction: column;
+    }
+}
