@@ -108,5 +108,6 @@ function reload(element){
         document.getElementById("output-result").classList.remove('ComputerWin');
 
         document.getElementById("output-result").classList.add('result');
+        
    
     }

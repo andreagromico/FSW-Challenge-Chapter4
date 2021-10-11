@@ -1,9 +1,11 @@
 .container-fluid {
     background-color: #9C835F;
+    height: 100%;
+    width: 100%;
 }
 
 .wrapper {
-    height: 30rem;
+    height: fit-content;
     width: 100%;
     padding: 10px;
     background-color: #9C835F;
@@ -14,7 +16,7 @@
     display: flex;
     flex-direction: row;
     justify-content: left;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .logo {
@@ -30,12 +32,22 @@
 .wrapper2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    height: fit-content;
 
-    height: 800px;
+    height: 50rem;
     padding: 10px;
     margin: 10px 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    width: 12rem;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
 }
 
 .box1 {
@@ -62,7 +74,7 @@
     margin: 10px;
 }
 
-.box-2 {
+.box-header {
     display: flex;
     flex-direction: row;
     height: fit-content;
@@ -74,8 +86,8 @@
 .container-play {
     display: flex;
     width: 100%;
+    height: fit-content;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
 }
 
@@ -84,16 +96,16 @@
     flex-direction: column;
     height: fit-content;
     width: fit-content;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    margin-left: 65%;
+    margin-left: 20rem;
 }
 
 .versus {
     display: flex;
-    flex-direction: row;
-    height: 20rem;
-    width: 40rem;
+    flex-direction: column;
+    height: 30rem;
+    width: 30rem;
     align-items: center;
     justify-content: center;
     margin-left: 10%;
@@ -103,9 +115,12 @@
 .computer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: fit-content;
     width: fit-content;
-    margin-right: 50%;
+    align-items: center;
+    margin-right: 20rem;
+    
 }
 
 .container-refresh {
@@ -115,15 +130,14 @@
 }
 
 .refresh {
-    
     height: fit-content;
     width: fit-content;
     justify-content: center;
 }
 
 .reload.button {
-    height: 4rem;
-    width: 4rem;
+    height: 2rem;
+    width: 2rem;
     justify-content: center;
 }
 
@@ -132,8 +146,8 @@
 
 #reference-reload{
   border-radius: 0%;
-  max-width:7rem;
-  height: 7rem;
+  max-width:6rem;
+  height: 6rem;
   align-content: center;
   background-color: transparent;
 }
@@ -151,11 +165,11 @@
 
 .DRAW {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: fit-content;
-  width: fit-content;
+  height: 8rem;
+  width: 9.5rem;
   background-color: #9C835F;
   background: url(./assets/img/Draw.png);
 
@@ -163,23 +177,23 @@
 
 .PlayerWin {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: fit-content;
-  width: fit-content;
+  height: 8rem;
+  width: 9.5rem;
   border-radius: 10%;
-  background-color: #9C835F;
+  background-color: #18f010;
   background: url(./assets/img/player-win.png);
 }
 
 .ComputerWin {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: fit-content;
-  width: fit-content;
+  height: 8rem;
+  width: 9.5rem;
   border-radius: 10%;
   background-color: #f36609; 
   background: url(./assets/img/computer-win.png);
@@ -188,28 +202,68 @@
 
 /*Responsive*/
 @media screen and (max-width: 600px) {
+
     .container-play {
         display: flex;
         flex-direction: column;
+
     }
 
     .wrapper2 {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .player {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        height: fit-content;
+        justify-content: center;
+        width: fit fit-content;
+        margin-left: 0%;
+        padding-bottom: 1rem;
     }
 
     .computer {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        height: fit-content;
+        justify-content: center;
+        width: fit-content;
+        margin-right: 0%;
+        padding-bottom: 1rem;
+        
     }
     
     .box1 {
         display: flex;
+        flex-direction: row;
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: row;
+        height: 5rem;
+        width: 12rem;
+        
+    }
+
+    .pilihan {
+        height: 4rem;
+        width: 4rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        align-content: center;
+        margin: 10px;
+    }
+
+    .versus {
+        display: flex;
         flex-direction: column;
+        height: 7rem;
+        align-items: center;
+        justify-content: center;
     }
 }
