@@ -5,9 +5,7 @@ var com_choose = ""
 var bg_choose_com = ""
 var bg_choose_player = ""
 
-var prevent_click = ""
-var reset = ""
-var reset_click =""
+
 
 
 // Logic for Player's Choice
@@ -19,42 +17,48 @@ function choose(element){
     if (player == "ROCK"){
         bg_choose_player = document.getElementById("player-batu");
         bg_choose_player.style.backgroundColor = "silver";
-        document.getElementById("player-gunting").style.pointerEvents = 'none';
-        document.getElementById("player-kertas").style.pointerEvents = 'none';
         document.getElementById("player-batu").style.pointerEvents = 'none';
+        document.getElementById("player-kertas").style.pointerEvents = 'none';
+        document.getElementById("player-gunting").style.pointerEvents = 'none';
+        
+        
 
     }else if(player == "SCISSORS"){
         bg_choose_player = document.getElementById("player-gunting");
         bg_choose_player.style.backgroundColor = "silver";
-        document.getElementById("player-gunting").style.pointerEvents = 'none';
-        document.getElementById("player-kertas").style.pointerEvents = 'none';
         document.getElementById("player-batu").style.pointerEvents = 'none';
+        document.getElementById("player-kertas").style.pointerEvents = 'none';
+        document.getElementById("player-gunting").style.pointerEvents = 'none';
+        
+        
 
     }else {
         bg_choose_player = document.getElementById("player-kertas");
         bg_choose_player.style.backgroundColor = "silver";
-        document.getElementById("player-gunting").style.pointerEvents = 'none';
-        document.getElementById("player-kertas").style.pointerEvents = 'none';
         document.getElementById("player-batu").style.pointerEvents = 'none';
+        document.getElementById("player-kertas").style.pointerEvents = 'none';
+        document.getElementById("player-gunting").style.pointerEvents = 'none';
+        
+        
     }
 
 
     //Computer's Choice in respon to player's choice
 
     if (com <= 33 && com >0) {
-        console.log("Pilihan dari COM adalah ROCK " + "value " + com);
+        console.log("Computer choose ROCK " + "value " + com);
         com_choose = "ROCK"
         bg_choose_com = document.getElementById("com-batu");
         bg_choose_com.style.backgroundColor = "silver";
         
     } else if (com >33 && com<=66){
-        console.log("Pilihan dari COM adalah SCISSORS " + "value " + com);
+        console.log("Computer choose SCISSORS " + "value " + com);
         com_choose = "SCISSORS"
         bg_choose_com = document.getElementById("com-gunting");
         bg_choose_com.style.backgroundColor = "silver";
        
     } else {
-        console.log("Pilihan dari COM adalah PAPER " + "value " + com);
+        console.log("Computer choose PAPER " + "value " + com);
         com_choose = "PAPER"
         bg_choose_com = document.getElementById("com-kertas");
         bg_choose_com.style.backgroundColor = "silver";        
@@ -65,17 +69,19 @@ function choose(element){
     //Game Logic and Selection
 
     if (player == com_choose){
-        document.getElementById("output-result").classList.remove('result');
+        document.getElementById("output-result").classList.remove('vs');
         document.getElementById("output-result").classList.add('DRAW');
         
     } else if (
-        (player == "ROCK" && com_choose == "SCISSORS") || (player == "SCISSORS" && com_choose == "PAPER") || (player == "PAPER" && com_choose == "ROCK")
+        (player == "ROCK" && com_choose == "SCISSORS")  
+        || (player == "PAPER" && com_choose == "ROCK")
+        || (player == "SCISSORS" && com_choose == "PAPER")
         ){
-        document.getElementById("output-result").classList.remove('result');
+        document.getElementById("output-result").classList.remove('vs');
         document.getElementById("output-result").classList.add('PlayerWin');
         
     } else {
-        document.getElementById("output-result").classList.remove('result');
+        document.getElementById("output-result").classList.remove('vs');
         document.getElementById("output-result").classList.add('ComputerWin');
        
     }

@@ -25,7 +25,6 @@
 
 .header {
     color: #F9B23D;
-    ;
 }
 
 .wrapper2 {
@@ -50,6 +49,7 @@
     width: 7rem;
     border-radius: 30px;
     color: #e0d9d9;
+    margin: 10px;
 
 }
 
@@ -59,6 +59,7 @@
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     align-content: center;
+    margin: 10px;
 }
 
 .box-2 {
@@ -83,19 +84,20 @@
     flex-direction: column;
     height: fit-content;
     width: fit-content;
-    margin-left: 70%;
-    margin-right: 10%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 65%;
 }
 
 .versus {
     display: flex;
     flex-direction: row;
-    height: fit-content;
-    width: fit-content;
+    height: 20rem;
+    width: 40rem;
     align-items: center;
     justify-content: center;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .computer {
@@ -103,7 +105,6 @@
     flex-direction: column;
     height: fit-content;
     width: fit-content;
-    margin-left: 10%;
     margin-right: 50%;
 }
 
@@ -129,20 +130,21 @@
 
 /*Gameplay*/
 
-.reference-reload{
+#reference-reload{
   border-radius: 0%;
-  max-width:2rem;
-  height: 2rem;
+  max-width:7rem;
+  height: 7rem;
   align-content: center;
   background-color: transparent;
 }
 
-.result {
+.vs {
   display: flex;
   flex-direction: row;
-  height: 5rem;
-  width: 5rem;
-  border-radius: 10%;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
   background-color: #9C835F;
 
 }
@@ -150,9 +152,10 @@
 .DRAW {
   display: flex;
   flex-direction: row;
-  height: 7rem;
-  width: 7rem;
-  border-radius: 10%;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
   background-color: #9C835F;
   background: url(./assets/img/Draw.png);
 
@@ -161,20 +164,22 @@
 .PlayerWin {
   display: flex;
   flex-direction: row;
-  height: 7rem;
-  width: 7rem;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
   border-radius: 10%;
   background-color: #9C835F;
   background: url(./assets/img/player-win.png);
-
-
 }
 
 .ComputerWin {
   display: flex;
   flex-direction: row;
-  height: 7rem;
-  width: 7rem;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
   border-radius: 10%;
   background-color: #f36609; 
   background: url(./assets/img/computer-win.png);
