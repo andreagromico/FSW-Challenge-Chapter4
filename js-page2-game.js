@@ -6,8 +6,6 @@ var bg_choose_com = ""
 var bg_choose_player = ""
 
 
-
-
 // Logic for Player's Choice
 
 function choose(element){
@@ -69,7 +67,7 @@ function choose(element){
     //Game Logic and Selection
 
     if (player == com_choose){
-        document.getElementById("output-result").classList.remove('vs');
+        document.getElementById("output-result").classList.remove('middle-versus');
         document.getElementById("output-result").classList.add('DRAW');
         
     } else if (
@@ -77,11 +75,11 @@ function choose(element){
         || (player == "PAPER" && com_choose == "ROCK")
         || (player == "SCISSORS" && com_choose == "PAPER")
         ){
-        document.getElementById("output-result").classList.remove('vs');
+        document.getElementById("output-result").classList.remove('middle-versus');
         document.getElementById("output-result").classList.add('PlayerWin');
         
     } else {
-        document.getElementById("output-result").classList.remove('vs');
+        document.getElementById("output-result").classList.remove('middle-versus');
         document.getElementById("output-result").classList.add('ComputerWin');
        
     }
@@ -103,11 +101,11 @@ function reload(element){
         document.getElementById("com-gunting").style.backgroundColor = "#9C835F";
         document.getElementById("com-kertas").style.backgroundColor = "#9C835F";
 
-        document.getElementById("output-result").classList.remove('Draw');
+        document.getElementById("output-result").classList.remove('DRAW');
         document.getElementById("output-result").classList.remove('PlayerWin');
         document.getElementById("output-result").classList.remove('ComputerWin');
 
-        document.getElementById("output-result").classList.add('result');
+        document.getElementById("output-result").classList.add('middle-versus');
         
    
     }

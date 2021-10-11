@@ -1,8 +1,4 @@
 /* Navigation Bar Section */
-nav {
-	z-index: 9999;
-}
-
 .bg-nav-project {
 	background-color: rgba(0,0,0,0.5);
 }
@@ -31,7 +27,9 @@ body {
 }
 
 section {
-	height: 100vh;
+	height: 100%;
+	width: 100%;
+	display: flex;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -47,7 +45,7 @@ a:hover {
 }
 
 .gray-color {
-	color: #777;
+	color: rgb(63, 61, 61) !important;
 }
 
 
@@ -57,55 +55,58 @@ a:hover {
 	src: url('./assets/font/BebasNeue-Bold.otf');
 }
 
-@font-face{
-	font-family: "OpenSans-Bold";
-	src: url('./assets/font/OpenSans-Bold.ttf');
-}
-
-@font-face{
-	font-family: "Opensans_Regular";
-	src: url('./assets/font/OpenSans-Regular.ttf');
-}
-
 
 /* Fonts Size */
 body {
-	font-family: "Open Sans Regular";
+	src: url('./assets/font/BebasNeue-Bold.otf');
+	font-family: "Bebas Neue Bold";
 	font-size: 18px;
+	color: whitesmoke;
 }
 
 .font-h1 {
+	src: url('./assets/font/OpenSans-Bold.ttf');
 	font-family: "Open Sans Bold";
 	font-size: 72px;
-    color: white;
+    color: whitesmoke;
 }
 
 .font-h2 {
+	src: url('./assets/font/OpenSans-Bold.ttf');
 	font-family: "Open Sans Bold";
 	font-size: 48px;
-    color: white;
+    color: whitesmoke;
 }
 
 .font-h3 {
+	src: url('./assets/font/OpenSans-Bold.ttf');
 	font-family: "Open Sans Bold";
 	font-size: 24px;
 }
 
 .font-subtext {
+	src: url('./assets/font/OpenSans-Regular.ttf');
 	font-family: "Open Sans Regular";
 	font-size: 14px;
+	color: whitesmoke;
 }
 
 .font-button {
+	src: url('./assets/font/OpenSans-Bold.ttf');
 	font-family: "Open Sans Bold";
 	font-size: 16px;
 }
 
 .font-xs {
+	src: url('./assets/font/OpenSans-Regular.ttf');
 	font-family: "Open Sans Regular";
 	font-size: 12px;
+	color: whitesmoke;
 }
 
+p {
+	color: whitesmoke;
+}
 
 /* Page 1 - Main Screen Call to Action */
 .page1-main-screen {
@@ -121,8 +122,8 @@ body {
 }
 
 .orange-button {
-	background-color: rgb(247, 176, 58);
-	padding: 10px 60px;
+	background-color: rgb(252, 180, 64) !important;
+	padding: 10px 80px
 }
 
 .orange-button:hover {
@@ -155,6 +156,11 @@ button.rounded-circle {
 	width: 15px !important;
 	height: 15px !important;
 	margin: 0 15px 0 15px !important;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
 }
 
 
@@ -234,7 +240,7 @@ ul.timeline > li > a:hover {
 table {
 	border: 0.5px solid rgba(204,204,204,0.3) !important;
 	margin: 50px 0 0 0;
-	color: white !important;
+	color: whitesmoke !important;
 }
 
 
@@ -257,11 +263,12 @@ table {
 }
 
 .thumb-img {
-	box-shadow: 5px 3px 0 rgb(247, 176, 58);
+	box-shadow: 5px 4px 0 rgb(247, 176, 58);
 }
 
 .testimonial {
-	margin: 15px 0 0 0;
+	margin: 10px 0 0 0;
+	color: grey;
 }
 
 
@@ -278,6 +285,8 @@ table {
 	padding: 10px;
 	color: rgb(247, 176, 58) !important;
 }
+
+
 
 
 /* Footer */
@@ -297,5 +306,19 @@ table {
 
 /* Responsive */
 @media screen and (max-width: 600px){
-	
+	section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: auto;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.row {
+		display: flex;
+		flex-direction: column;
+	}
 }
