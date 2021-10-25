@@ -112,6 +112,11 @@
     margin-right: 10%;
 }
 
+.middle-versus {
+    font-size: x-large;
+    font-weight: bold;
+}
+
 .computer {
     display: flex;
     flex-direction: column;
@@ -160,6 +165,8 @@
   height: fit-content;
   width: fit-content;
   background-color: #9C835F;
+  font-size: medium;
+  font-weight: bold
 
 }
 
@@ -168,10 +175,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 8rem;
+  height: 4rem;
   width: 9.5rem;
-  background-color: #9C835F;
-  background: url(./assets/img/Draw.png);
+  border-radius: 10%;
+  background-color: #e4e011;
+  font-size: medium;
+  font-weight: bold;
 
 }
 
@@ -180,11 +189,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 8rem;
+  height: 4rem;
   width: 9.5rem;
   border-radius: 10%;
-  background-color: #18f010;
-  background: url(./assets/img/player-win.png);
+  background-color: #5eeb75;
+  font-size: medium;
+  font-weight: bold;
+  rotate: 45;
+  
 }
 
 .ComputerWin {
@@ -192,11 +204,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 8rem;
+  height: 4rem;
   width: 9.5rem;
   border-radius: 10%;
-  background-color: #f36609; 
-  background: url(./assets/img/computer-win.png);
+  background-color: #f05555; 
+  font-size: medium;
+  font-weight: bold;
+  
 }
 
 
